@@ -26,7 +26,10 @@
             </li>
             <li class="<%= 'active' if current_page?('#') %>">
                 <%= link_to root_path do %>
-                <i class="fa fa-archive"></i> <span class="nav-label">Backups</span>
+                <i class="fa fa-archive"></i> <span class="nav-label">Backups Summary</span>
+                <% end %>
+                <%= link_to backups_index_path do %>
+                <i class="fa fa-archive"></i> <span class="nav-label">Backups List</span>
                 <% end %>
             </li>
         </ul>
